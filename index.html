@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Fundamental Serum</title>
   <link rel="stylesheet" href="/build/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -12,5 +13,33 @@
     <div id="footer"></div>
 
   <script src="/build/main.js"></script>
+  <script src="/scripts/jquery.js"></script>
+<script>
+$(function() {
+    $(window).scroll(function(){
+        var heroHeight = $('.hero').height();
+        var scroll = $(window).scrollTop();
+        console.log(heroHeight);
+
+        if (scroll >= heroHeight*.50) {
+            $('nav').slideDown(200).css('display', 'flex');
+            $('.cart-icon').fadeIn();
+            $('.home').fadeIn();
+            $('.cta').fadeOut();
+        } else {
+            $('nav').slideUp(200);
+            $('.cart-icon').fadeOut();
+            $('.home').fadeOut();
+            $('.cta').fadeIn();
+        }
+
+        if($(window).scrollTop() == $(document).height() - $(window).height()){
+            $('nav').fadeOut();
+            $('.cart-icon').fadeOut();
+            $('.home').fadeOut();
+        }
+    });
+});
+</script>
 </body>
 </html>
