@@ -2,6 +2,7 @@ import React from 'react';
 import autobind from 'autobind-decorator';
 
 import About from './About';
+import Spacer from './Spacer';
 import h from '../helpers';
 
 @autobind
@@ -31,11 +32,11 @@ class App extends React.Component {
           <button id="button" className="cta">Shop</button>
       </div>
         {this.lorem()}
-        {h.spacer()}
+        <Spacer type="pink" />
         {this.lorem()}
-        {h.spacer()}
+        <Spacer type="galaxy" />
         {this.lorem()}
-        {h.spacer()}
+        <Spacer type="blue" />
       </div>
     )
   }
