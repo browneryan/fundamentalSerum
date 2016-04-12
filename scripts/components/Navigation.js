@@ -7,16 +7,16 @@ class Navigation extends React.Component {
       <header>
         <nav className="navBar">
             <ul>
-                <li>About</li>
+                <li><a href="/about">About</a></li>
                 <li>Shop</li>
                 <li>Contact</li>
             </ul>
         </nav>
+        <div className="home">
+        <a href="/"><i className="fa fa-home fa-lg"></i></a>
+        </div>
         <div className="cart-icon">
         <i className="fa fa-shopping-cart fa-lg"></i>
-        </div>
-        <div className="home">
-        <i className="fa fa-home fa-lg"></i>
         </div>
     </header>
     )

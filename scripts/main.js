@@ -22,7 +22,7 @@ import h from './helpers';
 var routes = (
     <Router history={createHistory()}>
       <Route path="/" component={App} />
-      {/*<Route path="About" component={About} />*/}
+      <Route path="/about" component={About} />
     </Router>
 );
 
