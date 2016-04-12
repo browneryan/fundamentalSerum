@@ -57,7 +57,7 @@ class Footer extends React.Component {
 var routes = (
     <Router history={createHistory()}>
       <Route path="/" component={App} />
-      <Route path="About" component={About} />
+      {/*<Route path="About" component={About} />*/}
     </Router>
 );
 

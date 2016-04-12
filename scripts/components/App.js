@@ -1,6 +1,8 @@
 import React from 'react';
 import autobind from 'autobind-decorator';
 
+import About from './About';
+
 @autobind
 class App extends React.Component {
 
@@ -27,6 +29,8 @@ class App extends React.Component {
       <div className="hero">
           <button id="button" className="cta">Shop</button>
       </div>
+        {this.lorem()}
+        {this.lorem()}
         {this.lorem()}
       </div>
     )
