@@ -11,6 +11,7 @@ import autobind from 'autobind-decorator';
   Components
 */
 import App from './components/App';
+import About from './components/About';
 import jQuery from './jQuery';
 
 
@@ -56,6 +57,7 @@ class Footer extends React.Component {
 var routes = (
     <Router history={createHistory()}>
       <Route path="/" component={App} />
+      <Route path="About" component={About} />
     </Router>
 );
 
