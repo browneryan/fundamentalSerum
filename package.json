@@ -1,8 +1,8 @@
 {
-  "name": "catch-of-the-day",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "fundamental-serum",
+  "version": "0.0.1",
+  "description": "An eCommerce solution built with React",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
