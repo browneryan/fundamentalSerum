@@ -19,8 +19,8 @@ $(function() {
     $(window).scroll(function(){
         var heroHeight = $('.hero').height();
         var scroll = $(window).scrollTop();
-        console.log(heroHeight);
 
+        //This handles sliding the navbar down and hiding the cta at the same time
         if (scroll >= heroHeight*.50) {
             $('nav').slideDown(200).css('display', 'flex');
             $('.cart-icon').fadeIn();
@@ -33,6 +33,7 @@ $(function() {
             $('.cta').fadeIn();
         }
 
+        // This handles hiding the navbar once the window hits the bottom of the page
         if($(window).scrollTop() == $(document).height() - $(window).height()){
             $('nav').fadeOut();
             $('.cart-icon').fadeOut();

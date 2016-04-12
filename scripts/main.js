@@ -29,8 +29,10 @@ class Navigation extends React.Component {
             </ul>
         </nav>
         <div className="cart-icon">
+        <i className="fa fa-shopping-cart fa-lg"></i>
         </div>
         <div className="home">
+        <i className="fa fa-home fa-lg"></i>
         </div>
     </header>
     )
