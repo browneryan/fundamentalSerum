@@ -12,55 +12,16 @@ import autobind from 'autobind-decorator';
 */
 import App from './components/App';
 import About from './components/About';
+import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import h from './helpers';
-
-
-@autobind
-class Navigation extends React.Component {
-
-  render() {
-    return (
-      <header>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Shop</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <div className="cart-icon">
-        <i className="fa fa-shopping-cart fa-lg"></i>
-        </div>
-        <div className="home">
-        <i className="fa fa-home fa-lg"></i>
-        </div>
-    </header>
-    )
-  }
-
-}
-
-@autobind
-class Footer extends React.Component {
-
-  render() {
-    return (
-      <div>
-        <div className="push"></div>
-        <footer className="push"></footer>
-      </div>
-    )
-  }
-
-}
-
 
 /*
   Routes
 */
 var routes = (
     <Router history={createHistory()}>
-      <Route path="fundamentalSerum/" component={App} />
+      <Route path="/" component={App} />
       {/*<Route path="About" component={About} />*/}
     </Router>
 );
