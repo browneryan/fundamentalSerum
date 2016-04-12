@@ -12,7 +12,7 @@ import autobind from 'autobind-decorator';
 */
 import App from './components/App';
 import About from './components/About';
-import jQuery from './jQuery';
+import h from './helpers';
 
 
 @autobind
@@ -40,6 +40,7 @@ class Navigation extends React.Component {
 
 }
 
+@autobind
 class Footer extends React.Component {
 
   render() {
@@ -52,6 +53,7 @@ class Footer extends React.Component {
   }
 
 }
+
 
 /*
   Routes
