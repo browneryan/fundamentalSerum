@@ -4,6 +4,15 @@ import autobind from 'autobind-decorator';
 @autobind
 class App extends React.Component {
 
+  constructor() {
+    super();
+
+    this.state = {
+      juices : {},
+      order : {}
+    }
+  }
+
   lorem() {
     return (
       <p>
