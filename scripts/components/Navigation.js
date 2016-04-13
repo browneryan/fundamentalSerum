@@ -8,7 +8,7 @@ class Navigation extends React.Component {
         <nav className="navBar">
             <ul>
                 <li><a href="/about">About</a></li>
-                <li>Shop</li>
+                <li><a href="/catalog">Shop</a></li>
                 <li>Contact</li>
             </ul>
         </nav>
