@@ -2,20 +2,12 @@ import React from 'react';
 import autobind from 'autobind-decorator';
 
 import About from './About';
+import Navigation from './Navigation';
 import Spacer from './Spacer';
 import h from '../helpers';
 
 @autobind
 class App extends React.Component {
-
-  constructor() {
-    super();
-
-    this.state = {
-      juices : {},
-      order : {}
-    }
-  }
 
   lorem() {
     return (

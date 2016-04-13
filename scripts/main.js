@@ -14,6 +14,7 @@ import App from './components/App';
 import About from './components/About';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Catalog from './components/Catalog';
 import h from './helpers';
 
 /*
@@ -23,6 +24,7 @@ var routes = (
     <Router history={createHistory()}>
       <Route path="/" component={App} />
       <Route path="/about" component={About} />
+      <Route path="/catalog" component={Catalog} />
     </Router>
 );
 
